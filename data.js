@@ -6,7 +6,7 @@ const STATIONS = [
   {
     id: 1,
     title: "皮下注射",
-    icon: "💉",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>`,
     color: "#6366f1",
     category: "注射類",
     steps: [
@@ -29,7 +29,7 @@ const STATIONS = [
   {
     id: 2,
     title: "肌肉注射",
-    icon: "💉",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 2v4"/><path d="M10 2h4"/><rect x="9" y="6" width="6" height="10" rx="1"/><path d="M12 16v6"/><path d="M9 10h6"/><path d="M9 13h6"/></svg>`,
     color: "#8b5cf6",
     category: "注射類",
     steps: [
@@ -52,7 +52,7 @@ const STATIONS = [
   {
     id: 3,
     title: "採取動脈血",
-    icon: "🩸",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 2.7l5.2 5.5c2 2.1 3.1 4.9 2.8 7.8-.3 3.3-2.9 6-6.2 6.4a8 8 0 0 1-8.5-6.4 8.5 8.5 0 0 1 2.8-7.8L12 2.7z"/><path d="M8.5 14h2l1.5-3.5L14 16.5 15 14h1.5"/></svg>`,
     color: "#ec4899",
     category: "採血類",
     steps: [
@@ -78,7 +78,7 @@ const STATIONS = [
   {
     id: 4,
     title: "靜脈留置針置入術",
-    icon: "🏥",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><rect x="7" y="5" width="10" height="12" rx="2" ry="2"/><path d="M12 2v3"/><path d="M10 2h4"/><path d="M12 17v5"/><path d="M10 22h4"/><path d="M12 9v4"/><path d="M10 11h4"/></svg>`,
     color: "#0ea5e9",
     category: "注射類",
     steps: [
@@ -103,7 +103,7 @@ const STATIONS = [
   {
     id: 5,
     title: "無菌衣穿戴與手術鋪單",
-    icon: "🧤",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M20.3 5.8l-4.2-2.1c-.8-.4-1.8-.1-2.2.7L12 8l-1.9-3.6c-.4-.8-1.4-1.1-2.2-.7L3.7 5.8c-.8.4-1.1 1.4-.7 2.2L5 12h14l2-4c.4-.8.1-1.8-.7-2.2z"/><path d="M7 12v8c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2v-8"/></svg>`,
     color: "#14b8a6",
     category: "無菌操作",
     steps: [
@@ -124,7 +124,7 @@ const STATIONS = [
   {
     id: 6,
     title: "十二導極心電圖操作（EKG）",
-    icon: "❤️‍🩹",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>`,
     color: "#f43f5e",
     category: "檢查類",
     steps: [
@@ -145,7 +145,7 @@ const STATIONS = [
   {
     id: 7,
     title: "喉拭樣採檢",
-    icon: "🧫",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M9 2v14.5A3.5 3.5 0 0 0 12.5 20v0A3.5 3.5 0 0 0 16 16.5V2"/><path d="M7 2h10"/><path d="M9 9h6"/><path d="M12 14v.01"/></svg>`,
     color: "#a855f7",
     category: "採檢類",
     steps: [
@@ -169,7 +169,7 @@ const STATIONS = [
   {
     id: 8,
     title: "傷口縫合",
-    icon: "🪡",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M4 12c4-2 12-2 16 0"/><path d="M7 9v6"/><path d="M12 9v6"/><path d="M17 9v6"/></svg>`,
     color: "#f97316",
     category: "外科類",
     steps: [
@@ -189,7 +189,7 @@ const STATIONS = [
   {
     id: 9,
     title: "審視傷口及簡易換藥",
-    icon: "🩹",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="m21.7 7.3-5-5a2 2 0 0 0-2.8 0L2.3 13.9a2 2 0 0 0 0 2.8l5 5a2 2 0 0 0 2.8 0L21.7 10.1a2 2 0 0 0 0-2.8z"/><path d="m16 6-6 6"/><path d="m18 8-6 6"/><path d="M10 14h.01"/><path d="M12 12h.01"/><path d="M14 10h.01"/></svg>`,
     color: "#eab308",
     category: "外科類",
     steps: [
@@ -212,7 +212,7 @@ const STATIONS = [
   {
     id: 10,
     title: "乳房檢查",
-    icon: "🔍",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 21C8 18 4 13 4 8a5 5 0 0 1 10 0v5"/><path d="M12 21c4-3 8-8 8-13a5 5 0 0 0-10 0v5"/><path d="M10 13l4 4"/><path d="M14 13l-4 4"/></svg>`,
     color: "#d946ef",
     category: "檢查類",
     steps: [
@@ -231,7 +231,7 @@ const STATIONS = [
   {
     id: 11,
     title: "婦科內診檢查及子宮頸抹片檢查",
-    icon: "🔬",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 17v5"/><path d="M10 22h4"/><path d="M12 17c-2.8 0-5-2.2-5-5V9.5C7 8.1 5.9 7 4.5 7H4"/><path d="M12 17c2.8 0 5-2.2 5-5V9.5C17 8.1 18.1 7 19.5 7H20"/><path d="M4 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/><path d="M20 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/><path d="M12 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>`,
     color: "#06b6d4",
     category: "檢查類",
     steps: [
@@ -253,7 +253,7 @@ const STATIONS = [
   {
     id: 12,
     title: "氣管插管",
-    icon: "🫁",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 2v8"/><path d="M9 10c-2.8 0-5 2.2-5 5v3c0 1.7 1.3 3 3 3h2c1.7 0 3-1.3 3-3v-5"/><path d="M15 10c2.8 0 5 2.2 5 5v3c0 1.7-1.3 3-3 3h-2c-1.7 0-3-1.3-3-3v-5"/><path d="M10 4h4"/><path d="M10 7h4"/></svg>`,
     color: "#22c55e",
     category: "急救類",
     steps: [
@@ -278,7 +278,7 @@ const STATIONS = [
   {
     id: 13,
     title: "BLS 及 AED 操作",
-    icon: "⚡",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.7 0l-1.1 1-1.1-1a5.5 5.5 0 0 0-7.8 7.8l1 1 7.9 7.9 7.9-7.9 1-1a5.5 5.5 0 0 0 0-7.8z"/><path d="M13 7l-3 5h4l-3 5"/></svg>`,
     color: "#ef4444",
     category: "急救類",
     steps: [
@@ -303,7 +303,7 @@ const STATIONS = [
   {
     id: 14,
     title: "導尿管置放",
-    icon: "🏥",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 10a6 6 0 0 0-6 6v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a6 6 0 0 0-6-6Z"/><path d="M12 19v3"/><path d="M8 5c0 1.5 2 3 4 5 2-2 4-3.5 4-5"/></svg>`,
     color: "#0284c7",
     category: "管路類",
     steps: [
@@ -324,7 +324,7 @@ const STATIONS = [
   {
     id: 15,
     title: "鼻胃管置放",
-    icon: "🩺",
+    icon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--card-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="1em" height="1em"><path d="M12 2v6c0 1.7-1.3 3-3 3H8a4 4 0 0 0-4 4v2a4 4 0 0 0 4 4h4a6 6 0 0 0 6-6V9a3 3 0 0 0-3-3h-1"/></svg>`,
     color: "#059669",
     category: "管路類",
     steps: [
