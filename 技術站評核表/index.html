@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇美醫院 ─ OSCE 臨床技術站操作流程總覽</title>
+    <meta name="description" content="奇美醫療財團法人奇美醫院 OSCE 臨床技能操作訓練，技術站評核表操作流程彙整，互動式學習與自我檢核工具">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== Hero / Header ===== -->
+    <header class="hero" id="top">
+        <div class="hero-content">
+            <div class="hero-badge">Chi-Mei Medical Center ─ OSCE</div>
+            <h1>臨床技術站操作流程總覽</h1>
+            <p class="hero-sub">奇美醫療財團法人奇美醫院 ─ 臨床技能操作訓練學員表現評量</p>
+            <p class="hero-desc">共 <strong>15</strong> 站技術操作流程 ─ 點擊下方卡片展開互動式自我檢核清單</p>
+            <a href="#stations" class="hero-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6" />
+                </svg>
+                瀏覽所有技術站
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== Navigation Cards ===== -->
+    <section class="nav-section" id="stations">
+        <div class="container">
+            <h2 class="section-title">技術站總覽</h2>
+            <p class="section-desc">點擊卡片即可展開該站完整操作流程，並可逐步勾選自我練習</p>
+            <div class="card-grid" id="cardGrid"></div>
+        </div>
+    </section>
+
+    <!-- ===== Detail Modal ===== -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modalClose" aria-label="關閉">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+
+            <!-- Header -->
+            <div class="modal-header" id="modalHeader">
+                <span class="modal-number" id="modalNumber"></span>
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-subtitle" id="modalSubtitle"></p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-wrap">
+                <div class="progress-info">
+                    <span class="progress-label">完成度</span>
+                    <span class="progress-text" id="progressText">0 / 0</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <!-- Steps -->
+            <div class="modal-body" id="modalBody"></div>
+
+            <!-- Footer Actions -->
+            <div class="modal-footer">
+                <div class="modal-actions">
+                    <button class="btn btn-outline" id="resetBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="1 4 1 10 7 10" />
+                            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10" />
+                        </svg>
+                        重新練習
+                    </button>
+                    <button class="btn btn-primary" id="finishBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                            <polyline points="22 4 12 14.01 9 11.01" />
+                        </svg>
+                        完成評估
+                    </button>
+                </div>
+                <div class="modal-nav">
+                    <button class="btn btn-nav" id="prevBtn">← 上一站</button>
+                    <button class="btn btn-nav" id="nextBtn">下一站 →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Custom Alert Dialog ===== -->
+    <div class="dialog-overlay" id="dialogOverlay">
+        <div class="dialog" id="dialog">
+            <div class="dialog-icon" id="dialogIcon"></div>
+            <h3 class="dialog-title" id="dialogTitle"></h3>
+            <div class="dialog-body" id="dialogBody"></div>
+            <button class="btn btn-primary dialog-btn" id="dialogCloseBtn">知道了</button>
+        </div>
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>奇美醫療財團法人奇美醫院 ─ 臨床技能中心</p>
+            <p class="footer-sm">本網頁資訊僅供考生參考操作流程與自我練習。實際操作步驟將依現場考題或情境設定而有所異動，</p>
+        </div>
+    </footer>
+
+    <!-- ===== Back to Top ===== -->
+    <a href="#top" class="back-top" id="backTop" aria-label="回到頂端">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15" />
+        </svg>
+    </a>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
